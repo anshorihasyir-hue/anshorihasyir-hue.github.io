@@ -20,6 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="icons/mubagicon.webp" type="image/x-icon">
 <style>
+
 :root{
   --ink:#1A2620;
   --hijau:#042A2B;
@@ -34,7 +35,9 @@
   --font-body:"Plus Jakarta Sans", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{
+	scroll-behavior:smooth
+}
 body{
   font-family:var(--font-body);
   color:var(--ink);
@@ -43,13 +46,29 @@ body{
   font-size:16px;
   -webkit-font-smoothing:antialiased;
 }
-img{display:block;max-width:100%}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--kuningan);outline-offset:2px;border-radius:4px}
-
-.container{max-width:1120px;margin:0 auto;padding:0 24px}
-.section{padding:clamp(64px,9vw,108px) 0}
-.section--alt{background:var(--kertas-2)}
+img{
+	display:block;
+	max-width:100%
+}
+a{
+	color:inherit
+}
+:focus-visible{
+	outline:3px solid var(--kuningan);
+	outline-offset:2px;
+	border-radius:4px
+}
+.container{
+	max-width:1120px;
+	margin:0 auto;
+	padding:0 24px
+}
+.section{
+	padding:clamp(64px,9vw,108px) 0
+}
+.section--alt{
+	background:var(--kertas-2)
+}
 
 /* ---------- tipografi ---------- */
 .eyebrow{
@@ -267,20 +286,72 @@ tbody th{
 	background:var(--kertas-2);
 	box-shadow:inset 4px 0 0 0 var(--kuningan);
 }
-tbody td{width:220px;min-width:220px;height:90px;background:var(--putih);}
-tbody tr:hover td{background:var(--kertas);}
-.events{display:grid;gap:10px;}
-.event{padding:12px;background:var(--kertas-2);border:1px solid var(--garis);border-left:4px solid var(--kuningan);border-radius:10px;transition:transform 160ms ease,box-shadow 160ms ease;}
-.event:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgb(4 42 43 / 12%);}
-.event-title{margin:0 0 5px;font-family:var(--font-display);font-size:.8rem;line-height:1.4;color:var(--hijau-2);font-weight:700;}
-.event-speaker{margin:0 0 7px;font-size:.9rem;line-height:1.4;font-weight:700;color:var(--ink);}
-.event-time{display:flex;align-items:center;gap:6px;margin:0;color:color-mix(in srgb,var(--ink) 62%,transparent);font-size:.8rem;}
-.event-time::before{content:"◷";color:var(--hijau-2);font-size:1rem;}
-.empty{height:100%;min-height:56px;}
+tbody td{
+	width:220px;
+	min-width:220px;
+	height:90px;
+	background:var(--putih);
+}
+tbody tr:hover td{
+	background:var(--kertas);
+}
+.events{
+	display:grid;
+	gap:10px;
+}
+.event{
+	padding:12px;
+	background:var(--kertas-2);
+	border:1px solid var(--garis);
+	border-left:4px solid var(--kuningan);
+	border-radius:10px;
+	transition:transform 160ms ease,box-shadow 160ms ease;
+}
+.event:hover{
+	transform:translateY(-2px);
+	box-shadow:0 8px 18px rgb(4 42 43 / 12%);
+}
+.event-title{
+	margin:0 0 5px;
+	font-family:var(--font-display);
+	font-size:.8rem;
+	line-height:1.4;
+	color:var(--hijau-2);
+	font-weight:700;
+}
+.event-speaker{
+	margin:0 0 7px;
+	font-size:.9rem;
+	line-height:1.4;
+	font-weight:700;
+	color:var(--ink);
+}
+.event-time{
+	display:flex;
+	align-items:center;
+	gap:6px;margin:0;
+	color:color-mix(in srgb,var(--ink) 62%,transparent);
+	font-size:.8rem;
+}
+.event-time::before{
+	content:"◷";
+	color:var(--hijau-2);
+	font-size:1rem;
+}
+.empty{
+	height:100%;
+	min-height:56px;
+}
 @media(max-width:700px){
-body{padding:24px 12px;}
-.table-wrapper{border-radius:12px;}
-th,td{padding:12px;}
+body{
+	padding:24px 12px;
+}
+.table-wrapper{
+	border-radius:12px;
+}
+th,td{
+	padding:12px;
+}
 }
 
 /* ---------- kegiatan ---------- */
@@ -470,7 +541,6 @@ th,td{padding:12px;}
       <li><a href="#beranda">Beranda</a></li>
       <li><a href="#tentang">Tentang</a></li>
       <li><a href="#program">Program</a></li>
-      <li><a href="#kajian">Kajian</a></li>
       <li><a href="#galeri">Galeri</a></li>
       <li><a href="#kontak">Kontak</a></li>
       <li><a class="btn btn--primary" href="#donasi">Donasi</a></li>
@@ -814,11 +884,9 @@ th,td{padding:12px;}
         </div>
 
         <div class="rekening-grid">
-	
             <!-- QRIS 1 -->
             <div class="rek-card rek-card--qr reveal">
                 <div class="rek-card__bank">Infaq Operasional</div>
-
                 <img src="qris/qris-operasional.webp"
                      alt="QRIS Operasional"
                      class="qr-img">
@@ -827,11 +895,9 @@ th,td{padding:12px;}
                     BCA Syariah a.n. Yayasan Mubagi Ukhuwah Indonesia
                 </div>
             </div>
-
             <!-- QRIS 2 -->
             <div class="rek-card rek-card--qr reveal">
                 <div class="rek-card__bank">Infaq Pembangunan</div>
-
                 <img src="qris/qris-pembangunan.webp"
                      alt="QRIS Pembangunan"
                      class="qr-img">
@@ -839,50 +905,22 @@ th,td{padding:12px;}
                 <div class="rek-card__an">
                     BCA Syariah a.n. Yayasan Mubagi Ukhuwah Indonesia
                 </div>
-            </div>
-			
-			<!-- QRIS 3 -->
-            <div class="rek-card rek-card--qr reveal">
-                <div class="rek-card__bank">Infaq Wakaf</div>
-
-                <img src="qris/qris-wakaf.webp"
-                     alt="QRIS Wakaf"
-                     class="qr-img">
-                <div class="rek-card__no">018 426 032 1</div>
-                <div class="rek-card__an">
-                    BCA Syariah a.n. Yayasan Mubagi Ukhuwah Indonesia
-                </div>
-            </div>
-
-            <!-- Rekening 1 -->
+            </div>	
+            <!-- Rekening -->
             <div class="rek-card reveal">
                 <div class="rek-card__bank">Infaq Usaha</div>
                 <div class="rek-card__no">018 003 994 3</div>
-                <div class="rek-card__an">
-                    BCA Syariah a.n. Yayasan Mubagi Ukhuwah Indonesia
-                </div>
-            </div>
-
-            <!-- Rekening 2 -->
-            <div class="rek-card reveal">
+				<hr style="border: 1px dashed garis; width: 100%; margin: 20px auto;">
                 <div class="rek-card__bank">Infaq Zakat</div>
                 <div class="rek-card__no">018 003 993 5</div>
-                <div class="rek-card__an">
-                    BCA Syariah a.n. Yayasan Mubagi Ukhuwah Indonesia
-                </div>
-            </div>
-
-            <!-- Rekening 3 -->
-            <div class="rek-card reveal">
+				<hr style="border: 1px dashed garis; width: 100%; margin: 20px auto;">
                 <div class="rek-card__bank">Infaq Ummahat</div>
                 <div class="rek-card__no">018 226 262 6</div>
                 <div class="rek-card__an">
                     BCA Syariah a.n. Yayasan Mubagi Ukhuwah Indonesia
                 </div>
             </div>
-
         </div>
-
         <div class="donasi__cta reveal">
             <a class="btn btn--primary"
                href="https://wa.me/6282114047272?text=Assalamu'alaikum,%20saya%20ingin%20konfirmasi%20donasi%20untuk%20Yayasan%20Mubagi"
