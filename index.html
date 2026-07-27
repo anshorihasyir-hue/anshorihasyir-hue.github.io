@@ -375,6 +375,30 @@ h3{
 		grid-template-columns:1fr
 	}
 }
+/* ---------- Visi & Misi ---------- */
+.vision-text{
+    color:#4A564F;
+    line-height:1.8;
+    text-align:justify;
+}
+.mission-list{
+    margin:18px 0 0;
+    padding-left:28px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+.mission-list li{
+    color:#4A564F;
+    line-height:1.8;
+    text-align:justify;
+    padding-left:8px;
+}
+.mission-list li::marker{
+    font-family:var(--font-display);
+    font-weight:700;
+    color:var(--hijau);
+}
 /* ---------- program ---------- */
 .program-grid{
 	display:grid;
@@ -423,18 +447,6 @@ h3{
 	}
 }
 /* ---------- jadwal ---------- */
-{box-sizing:border-box;}
-body{
-	margin:0;
-	padding:0;
-	font-family:var(--font-body);
-	color:var(--ink);
-	background:var(--kertas);
-}
-.schedule-container{
-	width:min(1200px,100%);
-	margin:48px auto;
-}
 .schedule-heading{
 	margin-bottom:24px;
 	margin-top:24px;
@@ -507,7 +519,6 @@ tbody th{
 	position:sticky;
 	left:0;
 	z-index:2;
-	width:120px;
 	min-width:120px;
 	font-family:var(--font-display);
 	font-weight:700;color:var(--hijau);
@@ -517,7 +528,6 @@ tbody th{
 	box-shadow:inset 4px 0 0 0 var(--kuningan);
 }
 tbody td{
-	width:220px;
 	min-width:220px;
 	height:90px;
 	background:var(--putih);
@@ -569,13 +579,9 @@ tbody tr:hover td{
 	font-size:1rem;
 }
 .empty{
-	height:100%;
 	min-height:56px;
 }
 @media(max-width:700px){
-	body{
-		padding:24px 12px;
-	}
 	.table-wrapper{
 		border-radius:12px;
 	}
@@ -926,7 +932,7 @@ tbody tr:hover td{
     </div>
     <div class="arch">
       <div class="arch__frame">
-        <img src="images/image-main.webp" loading="eager">
+        <img src="images/image-main.webp" loading="eager" alt="Yayasan Mubagi">
       </div>
     </div>
   </div>
@@ -963,20 +969,34 @@ tbody tr:hover td{
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">Tentang Kami</span>
-      <h2>Mubagi: Muslim Belajar dan Berbagi</h2>
+    <h2>Mubagi: Muslim Belajar dan Berbagi</h2>
       <p style="text-align: justify; hyphens: auto;">Yayasan Mubagi adalah lembaga dakwah dan sosial yang tumbuh dari lingkungan warga Leuwinanggung, Tapos, Depok. Dua pilar kami sederhana: <strong>belajar</strong> lewat majelis ilmu yang rutin, dan <strong>berbagi</strong> lewat kerja-kerja sosial yang nyata — dari santunan, layanan kesehatan, hingga pembangunan fasilitas ibadah.</p>
 	  </div>
 	  <span class="eyebrow">Visi &amp; Misi</span>
-	  <h2>Visi</h2>
-      <p style="text-align: justify; hyphens: auto;">Menjadi yayasan terdepan dalam membantu masyarakat muslim Indonesia dengan mengutamakan nilai-nilai kehidupan berdasarkan Al-Qur'an &amp; Hadis sesuai pemahaman Salafush Shalih</p>
-	  <hr style="border: 1px dashed garis; width: 100%; margin: 20px auto;">
-	  <h2>Misi</h2>
-	  <p>• Meningkatkan kemampuan ilmu syar’i melalui pembangunan rumah tahfiz, rumah ibadah, pembelajaran, dan kajian ilmiah secara rutin.<br>
-	  • Mengembangkan dakwah sunnah sesuai dengan akidah dan pemahaman salafus shalih.<br>
-	  • Meningkatkan kepedulian sosial dengan menerima dan menyalurkan infak dan sedekah untuk membantu masyarakat Muslim yang membutuhkan.<br>
-	  • Membangun ekonomi Islam yang mandiri, profesional, dan bebas riba.<br>
-	  • Menjalin ukhuwah Islamiyah dengan berbagai kalangan Masyarakat.</p>
-	  <hr style="border: 1px dashed garis; width: 100%; margin: 20px auto;">
+	<h2>Visi</h2>
+		<p class="vision-text">
+		Menjadi yayasan terdepan dalam membantu masyarakat muslim Indonesia dengan mengutamakan nilai-nilai kehidupan berdasarkan Al-Qur'an dan Hadis sesuai pemahaman Salafus Shalih.
+		</p>
+	  <hr style="border: 1px dashed var(--garis); width: 100%; margin: 20px auto;">
+	<h2>Misi</h2>
+	<ol class="mission-list">
+		<li>
+        Meningkatkan kemampuan ilmu syar'i melalui pembangunan rumah tahfizh, rumah ibadah, pembelajaran, dan kajian ilmiah secara rutin.
+		</li>
+		<li>
+        Mengembangkan dakwah sunnah sesuai dengan akidah dan pemahaman Salafus Shalih.
+		</li>
+		<li>
+        Meningkatkan kepedulian sosial dengan menerima dan menyalurkan infak serta sedekah untuk membantu masyarakat muslim yang membutuhkan.
+		</li>
+		<li>
+        Membangun ekonomi Islam yang mandiri, profesional, dan bebas riba.
+		</li>
+		<li>
+        Menjalin ukhuwah Islamiyah dengan berbagai kalangan masyarakat.
+		</li>
+	</ol>
+	  <hr style="border: 1px dashed var(--garis); width: 100%; margin: 20px auto;">
     <div class="program-grid">
       <div class="program-card reveal">
         <h3>Pembina</h3>
@@ -1049,7 +1069,8 @@ tbody tr:hover td{
   </div>
 </section>
 <!-- ======== JADWAL KAJIAN ======== -->
-<section class="schedule-container" id="kajian">
+<section class="section" id="kajian">
+<div class="container">
   <div class="schedule-heading">
     <span class="eyebrow">Kajian</span>
 	<h1>Jadwal Kajian Rutin</h1>
@@ -1170,6 +1191,7 @@ tbody tr:hover td{
       </tbody>
     </table>
   </div>
+ </div>
 </section>
 <!-- ======== KEGIATAN TERBARU ======== -->
 <section class="section section--alt" id="galeri">
@@ -1260,7 +1282,7 @@ tbody tr:hover td{
                 <img src="qris/qris-operasional.webp"
                      alt="QRIS Operasional"
                      class="qr-img">
-				<hr style="border: 1px dashed garis; width: 75%; margin: 20px auto;">
+				<hr style="border: 1px dashed var(--garis); width: 75%; margin: 20px auto;">
                 <div class="rek-card__no">0184260321</div>
                 <div class="rek-card__an">
                     BCA Syariah a.n. Yayasan Mubagi Ukhuwah Indonesia
@@ -1272,7 +1294,7 @@ tbody tr:hover td{
                 <img src="qris/qris-pembangunan.webp"
                      alt="QRIS Pembangunan"
                      class="qr-img">
-				<hr style="border: 1px dashed garis; width: 75%; margin: 20px auto;">
+				<hr style="border: 1px dashed var(--garis); width: 75%; margin: 20px auto;">
                 <div class="rek-card__no">0185260007</div>
                 <div class="rek-card__an">
                     BCA Syariah a.n. Yayasan Mubagi Ukhuwah Indonesia
@@ -1282,10 +1304,10 @@ tbody tr:hover td{
             <div class="rek-card reveal">
                 <div class="rek-card__bank">Infaq Usaha</div>
                 <div class="rek-card__no">0180039943</div>
-				<hr style="border: 1px dashed garis; width: 75%; margin: 20px auto;">
+				<hr style="border: 1px dashed var(--garis); width: 75%; margin: 20px auto;">
                 <div class="rek-card__bank">Infaq Zakat</div>
                 <div class="rek-card__no">0180039935</div>
-				<hr style="border: 1px dashed garis; width: 75%; margin: 20px auto;">
+				<hr style="border: 1px dashed var(--garis); width: 75%; margin: 20px auto;">
                 <div class="rek-card__bank">Infaq Ummahat</div>
                 <div class="rek-card__no">0182262626</div>
                 <div class="rek-card__an">
