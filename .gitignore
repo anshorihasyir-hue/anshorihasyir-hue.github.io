@@ -1,6 +1,14 @@
-# wrangler files
-.wrangler
-.dev.vars*
-!.dev.vars.example
-.env*
-!.env.example
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Node (kalau suatu saat pakai npm)
+node_modules/
+
+# Logs
+*.log
