@@ -17,20 +17,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="icon" href="icons/mubagicon.webp" type="image/x-icon">
 <style>
 :root{
-  --ink:#1A2620;
-  --hijau:#042A2B;
-  --hijau-2:#048BA8;
-  --kertas:#F6F3EA;
-  --kertas-2:#ECEFE1;
-  --kuningan:#FF9400;
-  --kuningan-2:#984447;
-  --garis:#DCD6C4;
-  --putih:#FFFFFF;
-  --font-display:"Bricolage Grotesque", Bricolage Grotesque, "Bricolage Grotesque", serif;
-  --font-body:"Plus Jakarta Sans", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+--ink:#1A2620;
+--hijau:#042A2B;
+--hijau-2:#048BA8;
+--kertas:#F6F3EA;
+--kertas-2:#ECEFE1;
+--kuningan:#FF9400;
+--kuningan-2:#984447;
+--garis:#DCD6C4;
+--putih:#FFFFFF;
+--font-display:"Bricolage Grotesque", Bricolage Grotesque, "Bricolage Grotesque", serif;
+--font-body:"Plus Jakarta Sans", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 }
 *{
 	margin:0;
@@ -904,18 +905,18 @@ tbody tr:hover td{
 <header class="nav" id="navbar">
   <div class="nav__inner">
     <a class="nav__brand" href="#beranda" aria-label="Beranda Yayasan Mubagi">
-      <img src="icons/mubagilogo.webp" alt="Logo Yayasan Mubagi" onerror="this.style.display='none'">
+		<img src="icons/mubagilogo.webp" alt="Logo Yayasan Mubagi" onerror="this.style.display='none'">
     </a>
     <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+		<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
     <ul class="nav__links" id="navLinks">
-      <li><a href="#beranda">Beranda</a></li>
-      <li><a href="#tentang">Tentang</a></li>
-      <li><a href="#program">Program</a></li>
-      <li><a href="#galeri">Galeri</a></li>
-      <li><a href="#kontak">Kontak</a></li>
-      <li><a class="btn btn--primary" href="#donasi">Donasi</a></li>
+		<li><a href="#beranda">Beranda</a></li>
+		<li><a href="#tentang">Tentang</a></li>
+		<li><a href="#program">Program</a></li>
+		<li><a href="#galeri">Galeri</a></li>
+		<li><a href="#kontak">Kontak</a></li>
+		<li><a class="btn btn--primary" href="#donasi">Donasi</a></li>
     </ul>
   </div>
 </header>
@@ -923,17 +924,17 @@ tbody tr:hover td{
 <section class="hero" id="beranda">
   <div class="hero__inner">
     <div>
-      <h1>Muslim belajar bersama,<br>berbagi untuk sesama.</h1>
-      <p class="lead">Yayasan Mubagi menghidupkan kajian rutin, shalat berjama'ah, bakti sosial, dan layanan kesehatan gratis bagi warga Leuwinanggung, Tapos, Depok, dan sekitarnya.</p>
-      <div class="hero__cta">
-        <a class="btn btn--primary" href="#program">Lihat Program</a>
-        <a class="btn btn--ghost" href="https://wa.me/6282114047272" target="_blank" rel="noopener">Hubungi via WhatsApp</a>
-      </div>
+    <h1>Muslim belajar bersama,<br>berbagi untuk sesama.</h1>
+    <p class="lead">Yayasan Mubagi menghidupkan kajian rutin, shalat berjama'ah, bakti sosial, dan layanan kesehatan gratis bagi warga Leuwinanggung, Tapos, Depok, dan sekitarnya.</p>
+    <div class="hero__cta">
+    <a class="btn btn--primary" href="#program">Lihat Program</a>
+    <a class="btn btn--ghost" href="https://wa.me/6282114047272" target="_blank" rel="noopener">Hubungi via WhatsApp</a>
+    </div>
     </div>
     <div class="arch">
-      <div class="arch__frame">
-        <img src="images/image-main.webp" loading="eager" alt="Yayasan Mubagi">
-      </div>
+    <div class="arch__frame">
+    <img src="images/image-main.webp" loading="eager" alt="Yayasan Mubagi">
+    </div>
     </div>
   </div>
 </section>
@@ -1340,15 +1341,17 @@ tbody tr:hover td{
         </div>
         <div class="kontak-item">
           <h3>WhatsApp</h3>
-          <p><a href="https://wa.me/6282114047272" target="_blank" rel="noopener">+62 821-1404-7272</a></p>
+          <div class="sosmed">
+		  <a href="https://wa.me/6282114047272" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>+62 821-1404-7272</a>
+		  </div>
         </div>
         <div class="kontak-item">
           <h3>Media Sosial</h3>
           <div class="sosmed">
-            <a href="https://www.instagram.com/yayasanmubagi/" target="_blank" rel="noopener">Instagram ↗</a>
-            <a href="https://web.facebook.com/yayasanmubagi" target="_blank" rel="noopener">Facebook ↗</a>
-            <a href="https://www.youtube.com/@YayasanMubagi" target="_blank" rel="noopener">YouTube ↗</a>
-			<a href="https://www.tiktok.com/@YayasanMubagi" target="_blank" rel="noopener">TikTok ↗</a>
+            <a href="https://www.instagram.com/yayasanmubagi/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram ↗</a>
+            <a href="https://web.facebook.com/yayasanmubagi" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i>Facebook ↗</a>
+            <a href="https://www.youtube.com/@YayasanMubagi" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i>YouTube ↗</a>
+			<a href="https://www.tiktok.com/@YayasanMubagi" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i>TikTok ↗</a>
           </div>
         </div>
       </div>
